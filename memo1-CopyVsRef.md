@@ -82,8 +82,8 @@ const flipLinkedList = (node) => {
   let prev = null;
   let curr = node;
 
-  while (curr.next) {
-    let next = curr.next;
+  while (curr) {
+    const next = curr.next;
     curr.next = prev;
     prev = curr;
     curr = next;
